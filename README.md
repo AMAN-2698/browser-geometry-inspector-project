@@ -22,6 +22,7 @@ i built this with raw html, css, and vanilla js, and focused heavily on performa
 * **semantic html:** clean, w3c-compliant html structure to prevent layout bugs with inline vs block elements.
 
 ## how to run it
+You can directly visit an live demo link given at the top of this README file or
 1. clone the repo.
 2. open `index.html` in your browser.
 3. move your mouse, scroll around, and hover over the target box to see the engine do the math!
