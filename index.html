@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="target-box">
+            <div>
+                <h3>This is target box.</h3>
+                <hr>
+                <span>This target Box is used to configure any elements geometry according to viewport and document</span>
+                <p>Resizing made change in Target Box geometry.
+                For example,
+                clintWidth, clientHeight, offsetHeight, offsetWidth etc.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="info">
+        <div>
+            <section>
+                <h2>Geometry information</h2>
+                <span style="font-weight: 500; font-size: 12px;">Move mouse and scroll to update</span>
+            </section>
+            
+            <section id="mouseEvent">
+                <h3>1. Mouse Movement Event</h3>
+                <span style="font-weight: 500; font-size: 12px;">Current Element:</span>
+                <div>
+                    <span id="e-clientX">clientX: <span>0</span></span>
+                    <span id="e-clientY">clientY: <span>0</span></span>
+                </div>
+                <div>
+                    <span id="e-offsetX">offsetX: <span>0</span></span>
+                    <span id="e-offsetY">offsetY: <span>0</span></span>
+                </div>
+                <div>
+                    <span id="e-pageX">pageX: <span>0</span></span>
+                    <span id="e-pageY">pageY: <span>0</span></span>
+                </div>
+                <div>
+                    <span id="e-screenX">screenX: <span>0</span></span>
+                    <span id="e-screenY">screenY: <span>0</span></span>
+                </div>
+            </section>
+
+            <section id="target-box-geometry">
+                <h3>2.Target Box Geometry</h3>
+                <span style="font-weight: 500; font-size: 12px;">Target Box:</span>
+                <br>
+                
+                <strong style="margin-top: 10px;">INNER SPACING (PADDING+CONTENT)</strong>
+                <div>
+                    <span id="el-clientWidth">clientWidth: <span>0</span></span>
+                    <span id="el-clientHeight">clientHeight: <span>0</span></span>
+                </div>
+
+                <strong>TOTAL SPACING (INNER+BORDER+SCROLLBAR)</strong>
+                <div>
+                    <span id="el-offsetWidth">offsetWidth: <span>0</span></span>
+                    <span id="el-offsetHeight">offsetHeight: <span>0</span></span>
+                </div>
+
+                <strong>HIDDEN SPACING (INNER+OVERFLOW)</strong>
+                <div>
+                    <span id="el-scrollWidth">scrollWidth: <span>0</span></span>
+                    <span id="el-scrollHeight">scrollHeight: <span>0</span></span>
+                </div>
+
+                <strong>RELATIVE TO OFFSETPARENT (BODY)</strong>
+                <div>
+                    <span id="el-offsetLeft">offsetLeft: <span>0</span></span>
+                    <span id="el-offsetTop">offsetTop: <span>0</span></span>
+                </div>
+
+                <strong>TARGET ELEMENTS SCROLL INFO</strong>
+                <div>
+                    <span id="el-scrollLeft">scrollLeft: <span>0</span></span>
+                    <span id="el-scrollTop">scrollTop: <span>0</span></span>
+                </div>
+
+                <strong style="color: blueviolet; font-weight: 800;">GETBOUNDINGCLIENTRECT() (VIEWPORT)</strong>
+                <div class="rect">
+                    <span id="el-left">left: <span>0</span></span>
+                    <span id="el-top">top: <span>0</span></span>
+                </div>
+
+                <div class="rect">
+                    <span id="el-right">right: <span>0</span></span>
+                    <span id="el-bottom">bottom: <span>0</span></span>
+                </div>
+            </section>
+
+            <section id="window">
+                <h3>3. Window(Browser) Geometry</h3>
+                
+                <div style="margin-top: 16px;">
+                    <span id="w-innerWidth">innerWidth: <span>0</span></span>
+                    <span id="w-innerHeight">innerHeight: <span>0</span></span>
+                </div>
+
+                <div>
+                    <span id="w-scrollX">scrollX: <span>0</span></span>
+                    <span id="w-scrollY">scrollY: <span>0</span></span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
