@@ -1,6 +1,6 @@
 # DOM Geometry & Coordinate Inspector
 
-**[Click here to view the Live Interactive Demo!](https://aman-2698.github.io/browser-geometry-inspector-project/)**
+* **[Click here to view the Live Interactive Demo!](https://aman-2698.github.io/browser-geometry-inspector-project/)**
 
 hey everyone! i built this interactive developer tool to visualize and test how browser geometry, the css box model, and DOM coordinates actually work in real-time.
 
@@ -25,3 +25,6 @@ i built this with raw html, css, and vanilla js, and focused heavily on performa
 1. clone the repo.
 2. open `index.html` in your browser.
 3. move your mouse, scroll around, and hover over the target box to see the engine do the math!
+
+## compatibility
+This tool is designed for precision tracking and keyboard/mouse interaction. for the best experience, **please use it on a desktop or laptop.** while it is responsive, it is not optimized for mobile touchscreens because mobile browsers do not fire the mouse-based events required for accurate geometry calculation.
